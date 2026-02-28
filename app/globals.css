@@ -4,39 +4,40 @@
 @custom-variant dark (&:is(.dark *));
 
 :root {
-  --background: #0a192f;
-  --foreground: #ccd6f6;
-  --card: #112240;
-  --card-foreground: #ccd6f6;
-  --popover: #112240;
-  --popover-foreground: #ccd6f6;
-  --primary: #64ffda;
-  --primary-foreground: #0a192f;
-  --secondary: #112240;
-  --secondary-foreground: #ccd6f6;
-  --muted: #112240;
-  --muted-foreground: #8892b0;
-  --accent: #64ffda;
-  --accent-foreground: #0a192f;
-  --destructive: #ff6b6b;
-  --destructive-foreground: #0a192f;
-  --border: #233554;
-  --input: #233554;
-  --ring: #64ffda;
-  --chart-1: #64ffda;
-  --chart-2: #57cbff;
-  --chart-3: #ccd6f6;
-  --chart-4: #8892b0;
-  --chart-5: #233554;
-  --radius: 0.5rem;
-  --sidebar: #0a192f;
-  --sidebar-foreground: #ccd6f6;
-  --sidebar-primary: #64ffda;
-  --sidebar-primary-foreground: #0a192f;
-  --sidebar-accent: #112240;
-  --sidebar-accent-foreground: #ccd6f6;
-  --sidebar-border: #233554;
-  --sidebar-ring: #64ffda;
+  --background: #0a0a14;
+  --foreground: #e2e8f0;
+  --card: #13112b;
+  --card-foreground: #e2e8f0;
+  --popover: #13112b;
+  --popover-foreground: #e2e8f0;
+  --primary: #a855f7;
+  --primary-foreground: #ffffff;
+  --secondary: #1e1b3a;
+  --secondary-foreground: #e2e8f0;
+  --muted: #1e1b3a;
+  --muted-foreground: #94a3b8;
+  --accent: #c084fc;
+  --accent-foreground: #0a0a14;
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+  --border: #2d2a4a;
+  --input: #2d2a4a;
+  --ring: #a855f7;
+  --chart-1: #a855f7;
+  --chart-2: #c084fc;
+  --chart-3: #e2e8f0;
+  --chart-4: #94a3b8;
+  --chart-5: #2d2a4a;
+  --radius: 0.75rem;
+  --sidebar: #0a0a14;
+  --sidebar-foreground: #e2e8f0;
+  --sidebar-primary: #a855f7;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #1e1b3a;
+  --sidebar-accent-foreground: #e2e8f0;
+  --sidebar-border: #2d2a4a;
+  --sidebar-ring: #a855f7;
+  --glow: #a855f7;
 }
 
 @theme inline {
@@ -66,6 +67,7 @@
   --color-chart-3: var(--chart-3);
   --color-chart-4: var(--chart-4);
   --color-chart-5: var(--chart-5);
+  --color-glow: var(--glow);
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -87,5 +89,30 @@
 
   body {
     @apply bg-background text-foreground;
+  }
+}
+
+@layer utilities {
+  .glow-sm {
+    box-shadow: 0 0 15px rgba(168, 85, 247, 0.15), 0 0 30px rgba(168, 85, 247, 0.05);
+  }
+
+  .glow-md {
+    box-shadow: 0 0 20px rgba(168, 85, 247, 0.2), 0 0 40px rgba(168, 85, 247, 0.1);
+  }
+
+  .glow-lg {
+    box-shadow: 0 0 30px rgba(168, 85, 247, 0.3), 0 0 60px rgba(168, 85, 247, 0.15);
+  }
+
+  .glow-text {
+    text-shadow: 0 0 20px rgba(168, 85, 247, 0.5);
+  }
+
+  .bg-grid-pattern {
+    background-image:
+      linear-gradient(rgba(168, 85, 247, 0.03) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(168, 85, 247, 0.03) 1px, transparent 1px);
+    background-size: 60px 60px;
   }
 }
