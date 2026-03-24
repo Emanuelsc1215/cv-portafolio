@@ -157,10 +157,19 @@ const experiences = [
         company: "Proyectos Independientes",
         period: "Actual",
         highlights: [
-            "Configuracion tecnica del ERP Odoo v18 (CRM, Inventario, Compras, Ventas).",
-            "Modulos personalizados para flujos de inventario y facturacion.",
-            "Facturacion electronica con la DIAN.",
-            "Migracion de datos desde Siigo hacia Odoo.",
+            "Lidero el ciclo completo de desarrollo en Odoo (v18/19), especializándome en la creación de módulos personalizados y la automatización de flujos empresariales complejos.",
+            "Diseño e implemento lógica de negocio avanzada, personalización de vistas (XML) y controladores.",
+            "He desarrollado soluciones críticas como generadores masivos de series, integraciones de facturación electrónica y optimización de procesos en el ecosistema ERP.",
+        ],
+    },
+    {
+        role: "Aprendiz de Desarrollo / QA",
+        company: "GSE (Gestión de Seguridad Electrónica)",
+        period: "Nov 2024 - May 2025",
+        highlights: [
+            "Ejecución de pruebas funcionales y de regresión en ambientes de desarrollo y producción para asegurar la calidad del software.",
+            "Gestión del ciclo de vida del proyecto mediante Azure DevOps bajo metodologías ágiles (Scrum) y trabajo por Sprints.",
+            "Lideré el levantamiento de actas de requerimientos y la documentación técnica de planes de prueba, garantizando el cumplimiento de procesos internos en el sector de seguridad electrónica.",
         ],
     },
     {
