@@ -10,7 +10,7 @@ export function About() {
             <GlowOrb className="-left-20 top-0" size="lg" />
             <div className="mx-auto max-w-6xl">
                 <FadeInSection>
-                    <SectionHeading title="Sobre Mi" subtitle="Conoce al desarrollador detras del codigo" />
+                    <SectionHeading title="Sobre Mí" subtitle="Conoce al desarrollador detrás del código" />
                 </FadeInSection>
                 <div className="grid items-center gap-12 md:grid-cols-5">
                     <FadeInSection direction="right" delay={100} className="flex justify-center md:col-span-2">
@@ -31,34 +31,34 @@ export function About() {
                         <p className="text-base">
                             Soy un{" "}
                             <span className="font-semibold text-foreground">
-                                Tecnologo en Desarrollo de Software
+                                Tecnólogo en Desarrollo de Software
                             </span>{" "}
-                            con experiencia practica en arquitecturas de microservicios y
+                            con experiencia práctica en arquitecturas de microservicios y
                             desarrollo full-stack. Mi mayor fortaleza es mi{" "}
                             <span className="font-semibold text-primary">
-                                capacidad de aprendizaje rapido
+                                capacidad de aprendizaje rápido
                             </span>{" "}
-                            y mi genuina pasion por la tecnologia.
+                            y mi genuina pasión por la tecnología.
                         </p>
                         <p className="text-base">
-                            No me limito a escribir codigo:{" "}
+                            No me limito a escribir código:{" "}
                             <span className="text-foreground">
                                 me sumerjo completamente en cada proyecto
                             </span>
                             , entiendo el negocio, investigo las mejores soluciones y me
-                            aseguro de que cada linea de codigo aporte valor real.
+                            aseguro de que cada línea de código aporte valor real.
                         </p>
                         <p className="text-base">
                             Actualmente trabajo en{" "}
                             <span className="font-semibold text-primary">Deep0</span>, una plataforma
                             SaaS donde he crecido enormemente como desarrollador,
-                            enfrentandome a retos de arquitectura de microservicios,
-                            autenticacion multi-tenant y analiticas en tiempo real.
+                            enfrentándome a retos de arquitectura de microservicios,
+                            autenticación multi-tenant y analíticas en tiempo real.
                         </p>
                         <div className="rounded-xl border border-primary/10 bg-gradient-to-r from-primary/5 via-primary/3 to-transparent p-5">
                             <p className="italic text-foreground/90">
                                 {
-                                    "\"Cada dia es una oportunidad para aprender algo nuevo. Mi curiosidad no tiene limites y eso me impulsa a ser mejor profesional.\""
+                                    "\"Cada día es una oportunidad para aprender algo nuevo. Mi curiosidad no tiene límites y eso me impulsa a ser mejor profesional.\""
                                 }
                             </p>
                         </div>
@@ -79,17 +79,17 @@ const services = [
     {
         num: "02",
         title: "Arquitectura Backend",
-        desc: "APIs RESTful y microservicios con NestJS, Node.js, Firebase y patrones de diseno escalables.",
+        desc: "APIs RESTful y microservicios con NestJS, Node.js, Firebase y patrones de diseño escalables.",
     },
     {
         num: "03",
-        title: "Implementacion ERP",
-        desc: "Configuracion tecnica de Odoo v18: modulos personalizados, facturacion electronica y migracion de datos.",
+        title: "Implementación ERP",
+        desc: "Configuración técnica de Odoo v18: módulos personalizados, facturación electrónica y migración de datos.",
     },
     {
         num: "04",
         title: "DevOps & Deploy",
-        desc: "Despliegue Serverless en Vercel, Docker, CI/CD, y monitoreo con herramientas de analitica avanzada.",
+        desc: "Despliegue Serverless en Vercel, Docker, CI/CD, y monitoreo con herramientas de analítica avanzada.",
     },
 ]
 
@@ -149,7 +149,7 @@ const experiences = [
             "API Gateway y microservicios con NestJS 11, Express y TypeScript estricto.",
             "Bases de datos NoSQL con Firebase (Firestore) de alta disponibilidad.",
             "Auth B2B/B2C con Clerk y tokens JWT con Passport.js.",
-            "Deploy Serverless en Vercel con metricas avanzadas (D3.js, ApexCharts).",
+            "Deploy Serverless en Vercel con métricas avanzadas (D3.js, ApexCharts).",
         ],
     },
     {
@@ -173,7 +173,7 @@ const experiences = [
         ],
     },
     {
-        role: "Desarrollador Software (Aprendiz)",
+        role: "Desarrollador de Software (Aprendiz)",
         company: "SENA",
         period: "Ene 2023 - May 2025",
         highlights: [
@@ -343,7 +343,7 @@ export function Skills() {
             <GlowOrb className="-right-20 top-0" size="lg" />
             <div className="mx-auto max-w-6xl">
                 <FadeInSection>
-                    <SectionHeading title="Mis Habilidades" subtitle="Tecnologias y herramientas con las que trabajo diariamente" />
+                    <SectionHeading title="Mis Habilidades" subtitle="Tecnologías y herramientas con las que trabajo diariamente" />
                 </FadeInSection>
                 <FadeInSection delay={150}>
                     <div className="flex flex-wrap items-center justify-center gap-10 md:gap-14">
@@ -357,7 +357,7 @@ export function Skills() {
                 <FadeInSection delay={300}>
                     <div className="mt-16">
                         <h3 className="mb-6 text-center font-mono text-sm text-primary/60">
-                            {"// Mas tecnologias"}
+                            {"// Más tecnologías"}
                         </h3>
                         <div className="flex flex-wrap justify-center gap-3">
                             {[
@@ -448,37 +448,37 @@ export function DeepProject() {
                                 </div>
                             </div>
                             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
-                                Plataforma SaaS B2B/B2C para la gestion, enrutamiento y
-                                analitica avanzada de{" "}
+                                Plataforma SaaS B2B/B2C para la gestión, enrutamiento y
+                                analítica avanzada de{" "}
                                 <span className="font-semibold text-foreground">
-                                    Enlaces Profundos Dinamicos (Dynamic Deep Links)
+                                    Enlaces Profundos Dinámicos (Dynamic Deep Links)
                                 </span>
-                                . El sistema permite a empresas crear enlaces inteligentes que
+                                . El sistema permite a las empresas crear enlaces inteligentes que
                                 redirigen a los usuarios al destino correcto dependiendo de su
-                                dispositivo y configuracion.
+                                dispositivo y configuración.
                             </p>
 
                             {/* Features grid */}
                             <div className="mb-10 grid gap-4 sm:grid-cols-2">
                                 {[
                                     {
-                                        title: "Enlaces Dinamicos",
+                                        title: "Enlaces Dinámicos",
                                         desc: "Links con caducidad, notificaciones, UTMs y subdominios personalizados.",
                                         icon: <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71" /><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71" /></svg>,
                                     },
                                     {
-                                        title: "Analitica Avanzada",
-                                        desc: "Fingerprinting para tracking real-time de clicks totales vs. usuarios unicos.",
+                                        title: "Analítica Avanzada",
+                                        desc: "Fingerprinting para tracking en tiempo real de clics totales vs. usuarios únicos.",
                                         icon: <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M3 3v16a2 2 0 0 0 2 2h16" /><path d="m19 9-5 5-4-4-3 3" /></svg>,
                                     },
                                     {
                                         title: "Multi-tenant",
-                                        desc: "Admin panel con soporte multi-compania, roles y suscripciones Free/Premium.",
+                                        desc: "Panel de administración con soporte multi-compañía, roles y suscripciones Free/Premium.",
                                         icon: <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2" /><circle cx="9" cy="7" r="4" /><path d="M22 21v-2a4 4 0 0 0-3-3.87" /><path d="M16 3.13a4 4 0 0 1 0 7.75" /></svg>,
                                     },
                                     {
                                         title: "Microservicios",
-                                        desc: "Auth, Companias, Eventos, Enlaces, Invitaciones y Configs independientes.",
+                                        desc: "Auth, Compañías, Eventos, Enlaces, Invitaciones y Configuraciones independientes.",
                                         icon: <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><rect width="7" height="7" x="14" y="3" rx="1" /><rect width="7" height="7" x="14" y="14" rx="1" /><rect width="7" height="7" x="3" y="14" rx="1" /><rect width="7" height="7" x="3" y="3" rx="1" /></svg>,
                                     },
                                 ].map((feat) => (
@@ -500,7 +500,7 @@ export function DeepProject() {
                             {/* Tech stack */}
                             <div>
                                 <h4 className="mb-4 font-mono text-sm text-primary/60">
-                                    {"// Stack Tecnologico"}
+                                    {"// Stack Tecnológico"}
                                 </h4>
                                 <div className="flex flex-wrap gap-2">
                                     {[
@@ -528,7 +528,7 @@ export function DeepProject() {
 /* ===== EDUCATION ===== */
 const education = [
     {
-        title: "Tecnologia en Analisis y Desarrollo de Software",
+        title: "Tecnología en Análisis y Desarrollo de Software",
         institution: "SENA",
         period: "Feb 2023 - May 2025",
         icon: (
@@ -536,7 +536,7 @@ const education = [
         ),
     },
     {
-        title: "Tecnico en Programacion de Software",
+        title: "Técnico en Programación de Software",
         institution: "SENA",
         period: "Ene 2021 - Nov 2022",
         icon: (
@@ -544,8 +544,8 @@ const education = [
         ),
     },
     {
-        title: "Bachiller Academico",
-        institution: "I.E Fe y Alegria La Cima",
+        title: "Bachiller Académico",
+        institution: "I.E Fe y Alegría La Cima",
         period: "Ene 2017 - Nov 2022",
         icon: (
             <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M4 19.5v-15A2.5 2.5 0 0 1 6.5 2H19a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H6.5a1 1 0 0 1 0-5H20" /></svg>
@@ -558,7 +558,7 @@ export function Education() {
         <section id="education" className="relative px-6 py-32 lg:px-12">
             <div className="mx-auto max-w-6xl">
                 <FadeInSection>
-                    <SectionHeading title="Educacion" subtitle="Mi formacion academica" />
+                    <SectionHeading title="Educación" subtitle="Mi formación académica" />
                 </FadeInSection>
                 <div className="grid gap-6 md:grid-cols-3">
                     {education.map((edu, i) => (
@@ -590,10 +590,10 @@ export function Contact() {
                 <FadeInSection>
                     <SectionHeading title="Hablemos" subtitle="Siempre abierto a nuevas oportunidades y colaboraciones" />
                     <p className="mx-auto mb-12 max-w-lg text-base leading-relaxed text-muted-foreground">
-                        Estoy buscando nuevas oportunidades donde pueda aportar mi pasion,
-                        mi capacidad de aprendizaje rapido y mi compromiso con la excelencia
-                        tecnica. Si tienes un proyecto interesante o una posicion abierta,
-                        me encantaria escucharte.
+                        Estoy buscando nuevas oportunidades donde pueda aportar mi pasión,
+                        mi capacidad de aprendizaje rápido y mi compromiso con la excelencia
+                        técnica. Si tienes un proyecto interesante o una posición abierta,
+                        me encantaría escucharte.
                     </p>
                     <div className="flex flex-col items-center gap-4 sm:flex-row sm:justify-center">
                         <a
@@ -630,7 +630,7 @@ export function Footer() {
                 </div>
                 <div className="h-px w-16 bg-gradient-to-r from-transparent via-primary/30 to-transparent" />
                 <p className="font-mono text-xs text-muted-foreground/60">
-                    {"Disenado & Construido por Emanuel Sanchez Cano"}
+                    {"Diseñado & Construido por Emanuel Sánchez Cano"}
                 </p>
             </div>
         </footer>
