@@ -210,7 +210,7 @@ export function Experience() {
                                             <h3 className="text-lg font-bold text-foreground">
                                                 {exp.role}{" "}
                                                 {exp.company === "Proyecto Deep0" ? (
-                                                    <a 
+                                                    <a
                                                         href="https://deep0.co"
                                                         target="_blank"
                                                         rel="noopener noreferrer"
@@ -418,17 +418,35 @@ export function DeepProject() {
                                     En Desarrollo
                                 </span>
                             </div>
-                            <h3 className="mb-5 flex items-center text-4xl font-bold text-foreground md:text-5xl">
-                                <a 
-                                    href="https://deep0.co" 
-                                    target="_blank" 
-                                    rel="noopener noreferrer"
-                                    className="group/link inline-flex items-center gap-3 transition-colors"
-                                >
-                                    <span>Deep<span className="text-primary glow-text">0</span></span>
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/40 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:text-primary"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
-                                </a>
-                            </h3>
+                            <div className="mb-5 flex flex-wrap items-center justify-between gap-4">
+                                <h3 className="flex items-center text-4xl font-bold text-foreground md:text-5xl">
+                                    <a
+                                        href="https://deep0.co"
+                                        target="_blank"
+                                        rel="noopener noreferrer"
+                                        className="group/link inline-flex items-center gap-3 transition-colors"
+                                    >
+                                        <span>Deep<span className="text-primary glow-text">0</span></span>
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/40 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:text-primary"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6" /><polyline points="15 3 21 3 21 9" /><line x1="10" x2="21" y1="14" y2="3" /></svg>
+                                    </a>
+                                </h3>
+
+                                {/* Contenedor del QR */}
+                                <div className="group relative hidden shrink-0 sm:block">
+                                    <div className="absolute -inset-1 rounded-xl bg-gradient-to-r from-primary/50 to-[#c084fc]/50 opacity-0 blur transition duration-500 group-hover:opacity-100" />
+                                    <div className="relative flex h-32 w-32 items-center justify-center rounded-xl border border-primary/20 bg-[#13112b] p-2 transition-all duration-300 group-hover:border-primary/50 group-hover:shadow-[0_0_20px_rgba(168,85,247,0.3)]">
+                                        <img
+                                            src="/qrmejoradouno.png"
+                                            alt="Deep0 QR Code"
+                                            className="h-full w-full rounded-lg object-cover"
+                                        />
+                                    </div>
+                                    <span className="absolute -top-10 left-1/2 -translate-x-1/2 whitespace-nowrap rounded-md border border-primary/20 bg-[#13112b] px-3 py-1 text-xs font-medium text-foreground opacity-0 shadow-lg transition-opacity duration-300 group-hover:opacity-100">
+                                        Escanear QR
+                                        <div className="absolute -bottom-1.5 left-1/2 h-3 w-3 -translate-x-1/2 rotate-45 border-b border-r border-primary/20 bg-[#13112b]" />
+                                    </span>
+                                </div>
+                            </div>
                             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
                                 Plataforma SaaS B2B/B2C para la gestion, enrutamiento y
                                 analitica avanzada de{" "}
