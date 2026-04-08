@@ -209,7 +209,18 @@ export function Experience() {
                                         <div className="mb-5 flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
                                             <h3 className="text-lg font-bold text-foreground">
                                                 {exp.role}{" "}
-                                                <span className="text-primary">{"@ " + exp.company}</span>
+                                                {exp.company === "Proyecto Deep0" ? (
+                                                    <a 
+                                                        href="https://deep0.co"
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        className="text-primary transition-colors hover:text-primary/80 hover:underline hover:underline-offset-4"
+                                                    >
+                                                        {"@ " + exp.company}
+                                                    </a>
+                                                ) : (
+                                                    <span className="text-primary">{"@ " + exp.company}</span>
+                                                )}
                                             </h3>
                                             <span className="shrink-0 rounded-full border border-primary/15 bg-primary/5 px-4 py-1.5 font-mono text-xs text-primary">
                                                 {exp.period}
@@ -407,8 +418,16 @@ export function DeepProject() {
                                     En Desarrollo
                                 </span>
                             </div>
-                            <h3 className="mb-5 text-4xl font-bold text-foreground md:text-5xl">
-                                Deep<span className="text-primary glow-text">0</span>
+                            <h3 className="mb-5 flex items-center text-4xl font-bold text-foreground md:text-5xl">
+                                <a 
+                                    href="https://deep0.co" 
+                                    target="_blank" 
+                                    rel="noopener noreferrer"
+                                    className="group/link inline-flex items-center gap-3 transition-colors"
+                                >
+                                    <span>Deep<span className="text-primary glow-text">0</span></span>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" className="text-primary/40 transition-all duration-300 group-hover/link:translate-x-1 group-hover/link:-translate-y-1 group-hover/link:text-primary"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" x2="21" y1="14" y2="3"/></svg>
+                                </a>
                             </h3>
                             <p className="mb-10 max-w-2xl text-base leading-relaxed text-muted-foreground">
                                 Plataforma SaaS B2B/B2C para la gestion, enrutamiento y
